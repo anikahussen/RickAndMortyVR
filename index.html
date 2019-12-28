@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+
+		<script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="libraries/aframep5.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+<!-- 		<script>
+			document.getElementById("sky2").src = "images/stars.jpg";
+</script> -->
+		
+		<!-- custom styles -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+	    
+
+			<a-assets id="VRAssets">
+
+
+				<!--<a-asset id="cromulon_obj" src="obj/ShowMe.obj"></a-asset>-->
+
+				<!-- CROMULON -->
+				<a-asset id="pink_mtl" src="obj/pink.png"></a-asset>
+				<a-asset id="orange_mtl" src="obj/orange.png"></a-asset>
+				<a-asset id="red_mtl" src="obj/red.png"></a-asset>
+				<a-asset id="yellow_mtl" src="obj/yellow.png"></a-asset>
+				<a-asset id="purple_mtl" src="obj/purple.png"></a-asset>
+				<a-asset id="green_mtl" src="obj/green.png"></a-asset>
+				<img id="sky" src="images/stars.jpg">
+				<img id="skyview" src="images/danceshow.jpg">
+				<img id="start" src="images/rmvr.png">
+				<img id="logo" src="images/rickandmorty.png">
+				<a-asset id="pg_obj" src="obj/pg.obj"></a-asset>
+				<a-asset id="pg_mtl" src="obj/pg.mtl"></a-asset>
+				<a-asset id="portal_obj" src="obj/portal.obj"></a-asset>
+				<a-asset id="portal_mtl" src="obj/portal.mtl"></a-asset>
+
+
+				<!-- FROOPY -->
+				<a-asset id="rainbow" src="images/rainbowbox.png"></a-asset>
+				<a-asset id="pickle" src="images/picklerick2.png"></a-asset>
+				<a-asset id="cloud_obj" src="images/cloud.obj"></a-asset>
+				<a-asset id="cloud_mtl" src="images/cloud.mtl"></a-asset>
+				<a-asset id="ant_obj" src="images/antlick.obj"></a-asset>
+				<a-asset id="ant_mtl" src="images/antlick.mtl"></a-asset>
+				<!--		Rainbow OBJ - not working -->
+				<a-asset id="rb_obj" src="images/rainbow_1.obj"></a-asset>
+				<a-asset id="rb_mtl" src="images/rainbow_1.mtl"></a-asset>
+				<a-asset id="sky" src="images/sky_try2.png"></a-asset>
+				<!--pickle rick assets - NOT working! -->
+				<a-asset id="pickle_mtl" src="images/picklerick/PickleRick.mtl"></a-asset>
+				<a-asset id="pickle_obj" src="images/picklerick/PickleRick.obj"></a-asset>
+				<a-asset id="eye_pickle" src="images/picklerick/eye.jpg"></a-asset>
+				<a-asset id="default_pickle" src="images/picklerick/M_04___Default.jpg"></a-asset>
+				<!-- lets try another pickle -->
+				<a-asset id="pickle2_mtl" src="images/pickle_rick_2/Pickle.mtl"></a-asset>
+				<a-asset id="pickle2_obj" src="images/pickle_rick_2/Pickle.obj"></a-asset>
+				<!-- froopy tree OBJ assets -->
+				<a-asset id="tree_obj" src="images/froopytree/model.obj"></a-asset>
+				<a-asset id="tree_mtl" src="images/froopytree/materials.mtl"></a-asset>
+
+				<a-asset id="falls_obj" src="images/rainbowfalls/model.obj"></a-asset>
+				<a-asset id="falls_mtl" src="images/rainbowfalls/materials.mtl"></a-asset>
+				<!-- castle --->
+				<a-asset id="castle_obj" src="images/castle_model.obj"></a-asset>
+				<a-asset id="castle_mtl" src="images/castle_materials.mtl"></a-asset>
+				<!-- portal gun --->
+				<a-asset id="pgmtl" src="portalgun2/materials.mtl"></a-asset>
+				<a-asset id="pgobj" src="portalgun2/model.obj"></a-asset>
+				<a-asset id="rockmtl" src="images/rock_02.mtl"></a-asset>
+				<a-asset id="rockobj" src="images/rock_02.obj"></a-asset>
+
+				<img id="logo" src="images/rickandmorty.png">
+
+
+
+			</a-assets>
+			<a-sky id="sky" src="#start"></a-sky>
+
+
+			<a-image material="opacity: 1"position="0.5 4 -3" width="5" src="#logo"></a-image>
+
+		<!-- 	<a-image src="#logo"   width="5" height="1.5"></a-image> -->
+
+
+
+
+
+
+	  </a-scene>
+
+	</body>
+</html>
